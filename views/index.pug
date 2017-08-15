@@ -1,0 +1,12 @@
+html(lang="en")
+  head
+    title="file upload"
+
+  body
+    p Upload a file to see its size -- files are not stored
+    #container
+      form(method='POST', action='get-file-size', enctype="multipart/form-data")
+        input#file.form-control(type='file', name='file')
+        input#submit(type='submit', name='submit' value='check size')
+      - if (size)
+        p The file is #{size} bytes

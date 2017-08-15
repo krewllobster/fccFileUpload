@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/krewllobster/fccFileUpload/issues"
   },
-  "homepage": "https://github.com/krewllobster/fccFileUpload#readme"
+  "homepage": "https://github.com/krewllobster/fccFileUpload#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "helmet": "^3.8.1",
+    "multer": "^1.3.0",
+    "pug": "^2.0.0-rc.3"
+  },
+  "engines": {
+    "node": "7.7.4"
+  }
 }
